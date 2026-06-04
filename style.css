@@ -1,3 +1,6 @@
+html{
+    scroll-behavior:smooth;
+}
 *{
     margin:0;
     padding:0;
@@ -10,7 +13,7 @@ body{
 }
 
 header{
-    background:#1e3a8a;
+    background:#676c7c;
     color:white;
     padding:15px;
 }
@@ -107,4 +110,164 @@ footer{
 
 .dark-mode .project{
     background:#333;
+}
+.profile-pic{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #4f6ef7;
+    display:block;
+    margin:0 auto 20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+section{
+    padding:60px 10%;
+}
+
+.skills-container,
+.achievement-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+    min-width:180px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.project-card{
+    background:white;
+    padding:25px;
+    margin:20px 0;
+    border-radius:12px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-card a{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 15px;
+    background:#4f6ef7;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.social-links a{
+    background:#4f6ef7;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+}
+/* Skills Section */
+
+#skills{
+    padding:80px 10%;
+    background:#f4f7ff;
+    text-align:center;
+}
+
+.section-title{
+    font-size:2.5rem;
+    margin-bottom:40px;
+}
+
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.skill-card{
+    width:280px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+}
+
+.skill-card i{
+    font-size:40px;
+    color:#4f6ef7;
+    margin-bottom:15px;
+}
+
+.skill-card h3{
+    margin-bottom:10px;
+}
+.resume-btn{
+    margin-top:20px;
+}
+
+.resume-btn a{
+    text-decoration:none;
+    background:#ff6b6b;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:bold;
+}
+#stats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:50px;
+}
+
+.stat-card{
+    background:white;
+    padding:25px;
+    width:220px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-card h2{
+    color:#4f6ef7;
+    font-size:40px;
+}
+.resume-btn{
+    margin-top:20px;
+}
+
+.resume-btn a{
+    text-decoration:none;
+    background:#ff6b6b;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+.resume-btn a:hover{
+    opacity:0.9;
 }
